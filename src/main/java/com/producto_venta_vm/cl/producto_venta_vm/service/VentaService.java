@@ -14,15 +14,15 @@ public class VentaService {
     @Autowired
     private VentaRepository ventaRepository;
 
-    public List<Venta> findAll() {
+    public List<Venta> obtenerTodo() {
         return ventaRepository.findAll();
     }
 
-    public Venta save(Venta venta) {
+    public Venta guardar(Venta venta) {
         return ventaRepository.save(venta);
     }
 
-    public void delete(Integer id) {
+    public void eliminar(Integer id) {
         ventaRepository.deleteById(id);
     }
 }

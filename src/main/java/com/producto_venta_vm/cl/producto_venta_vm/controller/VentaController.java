@@ -17,7 +17,7 @@ public class VentaController {
     @PostMapping
     public ResponseEntity<?> crearVenta(@RequestBody Venta venta) {
         try {
-            Venta nuevaVenta = ventaService.save(venta);
+            Venta nuevaVenta = ventaService.guardar(venta);
             return ResponseEntity.status(HttpStatus.CREATED).body(nuevaVenta);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
