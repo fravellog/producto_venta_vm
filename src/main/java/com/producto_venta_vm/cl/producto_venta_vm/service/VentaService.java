@@ -18,6 +18,9 @@ public class VentaService {
         return ventaRepository.findAll();
     }
 
+    public Venta obtenerPorId(Integer id) {
+        return ventaRepository.findById(id).get();
+    }
     public Venta guardar(Venta venta) {
         return ventaRepository.save(venta);
     }
