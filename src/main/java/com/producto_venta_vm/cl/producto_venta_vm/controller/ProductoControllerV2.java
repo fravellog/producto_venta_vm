@@ -21,7 +21,7 @@ import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.*;
 
 @RestController
 @RequestMapping("/api/v2/productos")
-@Tag(name = "Producto Controller v1", description = "Operaciones CRUD básicas para productos con HATEOAS")
+@Tag(name = "Producto Controller v2", description = "Operaciones CRUD básicas para productos con HATEOAS")
 public class ProductoControllerV2 {
 
     private final ProductoService productoService;
