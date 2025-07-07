@@ -83,6 +83,28 @@
  			<groupId>org.springframework.boot</groupId>
  			<artifactId>spring-boot-starter-hateoas</artifactId>
 		</dependency>
+		<dependency>
+    		<groupId>com.squareup.okhttp3</groupId>
+    		<artifactId>mockwebserver</artifactId>
+    		<version>4.12.0</version>
+    		<scope>test</scope>
+		</dependency>
+		<dependency>
+    		<groupId>org.junit.jupiter</groupId>
+    		<artifactId>junit-jupiter</artifactId>
+    		<version>5.10.2</version>
+    		<scope>test</scope>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-webflux</artifactId>
+		</dependency>
+		<dependency>
+    		<groupId>io.projectreactor</groupId>
+    		<artifactId>reactor-test</artifactId>
+    		<version>3.6.3</version> <!-- Usa la versión que sea compatible con tu WebFlux (Spring Boot 3.5.3 usa Reactor 3.6.x) -->
+    		<scope>test</scope>
+	</dependency>
 	</dependencies>
 
 	<build>
